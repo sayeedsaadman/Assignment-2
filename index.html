@@ -25,7 +25,66 @@
     />
   </head>
   <body class="bg-[#1A0B2E]">
+<!-- NAV -->
+<header class="bg-[#1A0B2E] border border-gray-400">
+  <nav class="relative max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
+    <img class="w-[180px] lg:w-[219px] h-[32px]" src="./assets/TechWave.png" alt="logo">
+
+    <!-- Desktop Menu -->
+    <ul class="hidden lg:flex items-center gap-10 text-white font-medium">
+      <li class="cursor-pointer hover:text-violet-500">About</li>
+      <li class="cursor-pointer hover:text-violet-500">Episodes</li>
+      <li class="cursor-pointer hover:text-violet-500">Host</li>
+    </ul>
+
+    <div class="hidden lg:flex">
+      <button
+        class="px-5 py-3 rounded-full text-white font-semibold
+               bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400
+               hover:scale-105 transition-transform flex items-center gap-2 cursor-pointer">
+        Subscribe <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <input type="checkbox" id="menu" class="hidden peer">
+
     
+    <label for="menu" class="lg:hidden text-white text-2xl cursor-pointer">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+
+    <!-- Mobile Menu -->
+    <div
+      class="absolute top-full left-2 w-full bg-[#1A0B2E]
+             border-t border-white/20
+             hidden peer-checked:flex
+             flex-col items-center gap-6 py-6 lg:hidden">
+
+      <ul class="flex flex-col items-center gap-4 text-white font-medium">
+        <li class="cursor-pointer hover:text-pink-400 transition">About</li>
+        <li class="cursor-pointer hover:text-pink-400 transition">Episodes</li>
+        <li class="cursor-pointer hover:text-pink-400 transition">Host</li>
+      </ul>
+
+      <button
+        class="px-6 py-3 rounded-full text-white font-semibold
+               bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400
+               flex items-center gap-2 shadow-lg">
+        Subscribe <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+  </nav>
+</header>
+
+<!-- Hero Section -->
+
+
+
+
+
+
+    <!-- About Section -->
     <section>
        <div class="max-w-5xl mx-auto px-4 py-12">
       <!-- About Section -->
