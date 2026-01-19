@@ -27,7 +27,7 @@
   <body class="bg-[#1A0B2E]">
 <!-- NAV -->
 <header class="bg-[#1A0B2E] border border-gray-400">
-  <nav class="relative max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
+  <nav class="relative z-10 max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
     <img class="w-[180px] lg:w-[219px] h-[32px]" src="./assets/TechWave.png" alt="logo">
 
     <!-- Desktop Menu -->
@@ -40,7 +40,7 @@
     <div class="hidden lg:flex">
       <button
         class="px-5 py-3 rounded-full text-white font-semibold
-               bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400
+               bg-linear-to-r from-violet-600 via-pink-500 to-orange-400
                hover:scale-105 transition-transform flex items-center gap-2 cursor-pointer">
         Subscribe <i class="fa-solid fa-arrow-right"></i>
       </button>
@@ -55,7 +55,7 @@
 
     <!-- Mobile Menu -->
     <div
-      class="absolute top-full left-2 w-full bg-[#1A0B2E]
+      class="absolute z-50 top-full left-0 w-full bg-[#1A0B2E]
              border-t border-white/20
              hidden peer-checked:flex
              flex-col items-center gap-6 py-6 lg:hidden">
@@ -68,7 +68,7 @@
 
       <button
         class="px-6 py-3 rounded-full text-white font-semibold
-               bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400
+               bg-linear-to-r from-violet-600 via-pink-500 to-orange-400
                flex items-center gap-2 shadow-lg">
         Subscribe <i class="fa-solid fa-arrow-right"></i>
       </button>
@@ -76,16 +76,40 @@
 
   </nav>
 </header>
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-circle-wrapper">
+      <div class="hero-circle">
+        <img class="circle-img" src="./assets/hero-circle.png" alt="Podcast cover" />
+        <img class="circle-mic" src="./assets/microphone.png" alt="Microphone" />
+        <div class="new-badge">New</div>
+      </div>
+    </div>
 
-<!-- Hero Section -->
+    <h1 class="hero-title">TechWave</h1>
 
+    <p class="hero-subtitle">
+      Your daily dose of tech insights, productivity hacks, and personal growth
+    </p>
 
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">
+        <img src="./assets/spotify.png" alt="Spotify"/>
+        Listen on Spotify
+      </a>
 
+      <a href="#" class="btn-secondary">
+        <i class="fa-solid fa-envelope"></i>
+        Subscribe
+      </a>
+    </div>
+  </div>
+</section>
 
 
 
     <!-- About Section -->
-    <section>
+    <section id="banner">
        <div class="max-w-5xl mx-auto px-4 py-12">
       <!-- About Section -->
       <div class="text-center">
