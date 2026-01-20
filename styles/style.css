@@ -63,6 +63,7 @@
   font-weight: 800;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   box-shadow: 0 0 12px rgba(0, 255, 157, 0.6);
+  animation: badge 1.5s ease-in-out infinite alternate;
 }
 
 
@@ -126,10 +127,19 @@
   transform: translateY(-2px);
 }
 
-.new-badge:hover {
-  transform: rotate(10deg) translateY(2px);
-  box-shadow: 0 0 22px rgba(0, 255, 157, 0.9);
+
+
+@keyframes badge {
+  from {
+    transform: rotate(0deg) translateY(0);
+    box-shadow: 0 0 12px rgba(0, 255, 157, 0.4);
+  }
+  to {
+    transform: rotate(10deg) translateY(2px);
+    box-shadow: 0 0 22px rgba(0, 255, 157, 0.9);
+  }
 }
+
 
 
 
